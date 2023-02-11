@@ -25,4 +25,12 @@ contract Counter {
         name = nam;
         return name;
     }
+    function getName() public view returns(string memory _name){
+        return name;
+    }
+
+    function setName(string memory new_name) public returns(string memory _name){
+        name = new_name;
+        return name;
+    }
 }
